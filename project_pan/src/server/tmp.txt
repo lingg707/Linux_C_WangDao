@@ -1,0 +1,21 @@
+total 172K
+-rw-rw-r-- 1 lingg707 lingg707 1.7K Jun 13 23:19 command.c
+-rw-rw-r-- 1 lingg707 lingg707  13K Jun 13 23:19 command.o
+-rw-rw-r-- 1 lingg707 lingg707 2.1K Jun 13 21:50 factory.c
+-rw-rw-r-- 1 lingg707 lingg707  605 Jun 13 21:50 factory.h
+-rw-rw-r-- 1 lingg707 lingg707  14K Jun 13 21:50 factory.o
+-rw-rw-r-- 1 lingg707 lingg707    6 Jun 12 10:45 file
+-rw-r--r-- 1 lingg707 lingg707  933 Jun 12 00:17 func.h
+-rw-rw-r-- 1 lingg707 lingg707 1005 Jun 11 23:17 main.c
+-rw-rw-r-- 1 lingg707 lingg707  13K Jun 12 00:41 main.o
+-rw-rw-r-- 1 lingg707 lingg707  181 Jun 10 23:54 Makefile
+-rwxrwxr-x 1 lingg707 lingg707  40K Jun 13 23:19 server
+-rw-rw-r-- 1 lingg707 lingg707   45 Jun 11 20:54 server.sh
+-rw-rw-r-- 1 lingg707 lingg707 1.2K Jun 12 10:44 tcpinit.c
+-rw-rw-r-- 1 lingg707 lingg707  11K Jun 12 10:44 tcpinit.o
+-rw-rw-r-- 1 lingg707 lingg707    0 Jun 13 23:20 tmp.txt
+-rw-rw-r-- 1 lingg707 lingg707  883 Jun 12 00:40 transfile.c
+-rw-rw-r-- 1 lingg707 lingg707  12K Jun 12 00:41 transfile.o
+-rw-rw-r-- 1 lingg707 lingg707  539 Jun 12 00:15 workque.c
+-rw-rw-r-- 1 lingg707 lingg707  408 Jun 10 21:26 workque.h
+-rw-rw-r-- 1 lingg707 lingg707  10K Jun 12 00:41 workque.o

@@ -1,0 +1,125 @@
+ 2002  ls
+ 2003  cd ..
+ 2004  ls
+ 2005  rm -r lele
+ 2006  rm -rf lele
+ 2007  ls -l /
+ 2008  sudo rm -rf lele
+ 2009  ls
+ 2010  cd luke
+ 2011  ls
+ 2012  sudo passwd root
+ 2013  su root
+ 2014  ls -l
+ 2015  mkdir day2
+ 2016  cp gmtime.c day2
+ 2017  rm gmtime.c 
+ 2018  mv day2/gmtime.c .
+ 2019  ls
+ 2020  cp test day2
+ 2021  cp test day2 -r
+ 2022  find /usr/include/ -name stdio.h
+ 2023  cd day2
+ 2024  ls
+ 2025  mkdir dir1
+ 2026  ls
+ 2027  touch file
+ 2028  mkdir test/file
+ 2029  find . -name file
+ 2030  find . -name file -a -type d
+ 2031  find . -name file -a -type f
+ 2032  find /usr/include/ -name stdio.h -o -name stdlib.h
+ 2033  ls
+ 2034  find . ! -name file
+ 2035  find /usr/include/ -name std*.h
+ 2036  cd ..
+ 2037  find . -name *.c
+ 2038  ls
+ 2039  find . -name "*.c"
+ 2040  find /usr/include/ -name std??.h
+ 2041  find /usr/include/ -name std*.h
+ 2042  cd day2
+ 2043  ls
+ 2044  touch file1
+ 2045  touch file2
+ 2046  touch file3
+ 2047  touch file4
+ 2048  ls
+ 2049  find . -name file[1-3]
+ 2050  find . -name "file[1-3]"
+ 2051  ls
+ 2052  cat /etc/passwd
+ 2053  cd /home
+ 2054  find . -uid 1001
+ 2055  ls -l ./guangtouqiang/.gnupg
+ 2056  ls -l ./guangtouqiang
+ 2057  ls -al ./guangtouqiang
+ 2058  ls
+ 2059  find . -user luke
+ 2060  cd luke
+ 2061  find . -empty
+ 2062  ls -l ./20190328/Tinyhttpd/.git/branches
+ 2063  ls
+ 2064  cd day2
+ 2065  ls
+ 2066  ll
+ 2067  chmod 666 file
+ 2068  ll
+ 2069  find . -perm 666
+ 2070  find . -perm 664
+ 2071  find . -size 1
+ 2072  man find
+ 2073  echo hello >file
+ 2074  ll
+ 2075  find . -size 1
+ 2076  find . -size 6c
+ 2077  echo how >file1
+ 2078* 
+ 2079  echo how
+ 2080  echo -n how >file2
+ 2081  ll
+ 2082  cat file2
+ 2083  cat file1
+ 2084  find . -size 6c
+ 2085  find . -size 3c
+ 2086  ll
+ 2087  find . -mmin 1
+ 2088  find . -mmin -1
+ 2089  find . -mmin +1
+ 2090  find . -mmin -480
+ 2091  find . -mtime -1
+ 2092  cd ..
+ 2093  find . -mtime -1
+ 2094  find /usr/include/ -name stdio.h
+ 2095  find /usr/include/ -name stdio.h -exec ls -l {} \;
+ 2096  find /usr/include/ -name stdio.h|xargs ls -l
+ 2097  cd day2
+ 2098* 
+ 2099  cd ..
+ 2100  ls
+ 2101  cd -
+ 2102  ls
+ 2103  ls|wc -l
+ 2104  cd ..
+ 2105  ls|wc -l
+ 2106  find /usr/include/ -name std*.h
+ 2107  find /usr/include/ -name std*.h|wc -l
+ 2108  cd day2
+ 2109  ls
+ 2110  find . -name file[1-3]
+ 2111  find . -name "file[1-3]"
+ 2112  find . -name "file[1-3]"|xargs ls -l
+ 2113  find . -name "file[1-3]"|xargs rm -rf
+ 2114  ls
+ 2115  df -h
+ 2116  cd /home
+ 2117  ls
+ 2118  ls -l
+ 2119  du -h
+ 2120  sudo du -h
+ 2121  sudo du -h --max-depth=0
+ 2122  sudo du -h --max-depth=1
+ 2123  cd luke
+ 2124  du -h --max-depth=1
+ 2125  history 
+ 2126  history |tail -125 >day2_history1.txt

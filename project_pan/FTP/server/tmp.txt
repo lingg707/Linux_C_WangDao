@@ -1,0 +1,7 @@
+-rw-rw-r-- 1 lingg707 lingg707     6 Jun 14 15:54 file
+-rwxrwxr-x 1 lingg707 lingg707 42872 Jun 14 15:50 ftserve
+-rw-rw-r-- 1 lingg707 lingg707  7698 Jun 14 15:50 ftserve.c
+-rw-rw-r-- 1 lingg707 lingg707  1353 Jun 14 15:44 ftserve.h
+-rw-rw-r-- 1 lingg707 lingg707 47272 Jun 14 15:50 ftserve.o
+-rw-rw-r-- 1 lingg707 lingg707   281 Jun 14 15:45 Makefile
+-rw-rw-r-- 1 lingg707 lingg707     0 Jun 14 16:15 tmp.txt

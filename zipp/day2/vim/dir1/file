@@ -1,0 +1,1000 @@
+ 1207  ls
+ 1208  mv shmctl.c shmctl_rmid.c
+ 1209  cp shmctl_rmid.c shmctl_stat.c
+ 1210  vim shmctl_stat.c 
+ 1211  gcc shmctl_stat.c 
+ 1212  ./a.out 
+ 1213  ls
+ 1214  vim shmget.c 
+ 1215  gcc shmget.c 
+ 1216  ./a.out 
+ 1217  vim shmget.c 
+ 1218  gcc shmget.c 
+ 1219  ./a.out 
+ 1220  ls
+ 1221  cp shmctl_stat.c shmctl_set.c
+ 1222  vim shmctl_set.c 
+ 1223  gcc shmctl_set.c 
+ 1224  ./a.out 
+ 1225  ipcs
+ 1226  ls
+ 1227  cp shmget.c shmget_private.c
+ 1228  vim shmget_private.c 
+ 1229  gcc shmget_private.c
+ 1230  ./a.out 
+ 1231  ipcs
+ 1232  ./a.out 
+ 1233  ipcs
+ 1234  ipcrm -m 2621446
+ 1235  ipcrm -m 2654217
+ 1236  ipcrm -m 2686986
+ 1237  ipcs
+ 1238  ls
+ 1239  cp shmget.c shmget_excl.c
+ 1240  vim shmget_excl.c 
+ 1241  gcc shmget_excl.c 
+ 1242  ./a.out 
+ 1243  cd ~
+ 1244  tar cvzf day8.tar.gz day8
+ 1245  kscp day8.tar.gz 
+ 1246  history 
+ 1247  cd day8
+ 1248  ls
+ 1249  free
+ 1250  man mmap
+ 1251  ls
+ 1252  cd shm/
+ 1253  ls
+ 1254  echo hello >file
+ 1255  ls
+ 1256  cd ~
+ 1257  find . -name mmap.c
+ 1258  cp ./day6/mmap/mmap.c ~/day8/shm/
+ 1259  cd ~/day8/shm
+ 1260  ls
+ 1261  mv mmap.c mmap_shm.c
+ 1262  vim mmap_shm.c 
+ 1263  ls
+ 1264  ll
+ 1265  cat mmap_shm.c 
+ 1266  ls
+ 1267  ll
+ 1268  echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" >file
+ 1269  ll
+ 1270  gcc mmap_shm.c 
+ 1271  ./a.out 
+ 1272  ./a.out file
+ 1273  cat file 
+ 1274  man mmap
+ 1275  cd /dev/hugepages/
+ 1276  ls
+ 1277  cd ~
+ 1278  clear
+ 1279  kssh 
+ 1280  ps -elf|grep a.out
+ 1281  kill -14 104427
+ 1282  ps -elf|grep a.out
+ 1283  kill -14 104507 
+ 1284  clear
+ 1285  ps -elf|grep a.out
+ 1286  kill -14 105254
+ 1287  ps -elf|grep a.out
+ 1288  kill -14 105257
+ 1289  ps -elf|grep a.out
+ 1290  kill -9 105330
+ 1291  man strerr
+ 1292  man sterr
+ 1293  man strerr
+ 1294  man strerror
+ 1295  kModify 
+ 1296  man pthread_exit
+ 1297  man gettimeofday
+ 1298  ps -elf|grep a.out
+ 1299  ps -elLf|grep a.out
+ 1300  cd /proc/109690/
+ 1301  ls
+ 1302  cd task/
+ 1303  man pthread_self
+ 1304  ps -elLf|grep a.out
+ 1305  cd ~/day11/pthread_mutex/
+ 1306  cat pthread_lock_twothread.c
+ 1307  cat pthread_mutex_cancel.c 
+ 1308  ps -elLf|grep a.out
+ 1309  man pthread_mutexattr_init
+ 1310  man pthread_mutexattr_settype
+ 1311  man pthread_mutexattr_gettype
+ 1312  ps -elLf|grep a.out
+ 1313  man pthread_cond_signal
+ 1314  man pthread_cond_timedwait
+ 1315  man splice
+ 1316  man pthread_attr_getdetachstate
+ 1317  man sched
+ 1318  man sched_get_priority_max
+ 1319  grep pthread_attr /usr/include/pthread.h 
+ 1320  man sched
+ 1321  grep pthread_attr /usr/include/pthread.h 
+ 1322  man pthread_attr_getdetachstate
+ 1323  mkdir day11
+ 1324  mkdir day12
+ 1325  cd day12/
+ 1326  vim pthread_attr.c
+ 1327  man pthread_join
+ 1328  gcc pthread_attr.c -pthread
+ 1329  ./a.out 
+ 1330  man pthread_join
+ 1331  vim pthread_attr.c
+ 1332  gcc pthread_attr.c -pthread
+ 1333  ./a.out 
+ 1334  vim pthread_attr.c
+ 1335  ls
+ 1336  ll
+ 1337  sudo chown xiongda:xiongda a.out
+ 1338  ll
+ 1339  sudo chown luke:luke a.out
+ 1340  ll
+ 1341  ssh test@192.168.2.100
+ 1342  scp a.out test@192.168.2.100:~
+ 1343  ssh test@192.168.2.100
+ 1344  scp a.out test@192.168.2.100:~
+ 1345  vim /etc/networks
+ 1346  vim ~/.bashrc 
+ 1347  cd ~
+ 1348  find . -name Makefile
+ 1349  cat ./day4/makefile/Makefile
+ 1350  kmkdir 
+ 1351  ls
+ 1352  tar cvzf day12.tar.gz day12
+ 1353  kscp day12.tar.gz 
+ 1354  ps -elf|grep udp
+ 1355  reboot
+ 1356  sudo reboot
+ 1357  ps -elf|grep process
+ 1358  kill -10 18684
+ 1359  clear
+ 1360  ps -elf|grep process
+ 1361  kill -10 20938
+ 1362  mount
+ 1363  man ctime_r
+ 1364  cd ~/.vimplus/
+ 1365  ls
+ 1366  history 
+ 1367  ./install.sh 
+ 1368  cd ..
+ 1369  ls
+ 1370  vim .vimrc
+ 1371  ls vimrc 
+ 1372  cat vimrc 
+ 1373  clear
+ 1374  ls
+ 1375  cd day15/
+ 1376  ls
+ 1377  cd ..
+ 1378  ls
+ 1379  mkdir day16
+ 1380  cd day15/
+ 1381  ls
+ 1382  cp -r process_pool_server ../day16/
+ 1383  ls
+ 1384  cd send_flags_dontwait/
+ 1385  ls
+ 1386  cd ..
+ 1387  ls
+ 1388  cp send_flags_dontwait ../day16/ -r
+ 1389  cd ../day16/
+ 1390  ls
+ 1391  mv send_flags_dontwait send_recv_syn
+ 1392  ls
+ 1393  cd send_recv_syn/
+ 1394  ls
+ 1395  vim tcp_server.c 
+ 1396  vim ~/.vimrc
+ 1397  vim tcp_server.c 
+ 1398  vim tcp_client.c
+ 1399  make
+ 1400  ./tcp_server 192.168.3.254 2000
+ 1401  ls
+ 1402  vim tcp_server.c 
+ 1403  ls
+ 1404  cd ..
+ 1405  ls
+ 1406  cd process_pool_server/
+ 1407  ls
+ 1408  cd ..
+ 1409  ls
+ 1410  cp ../day15/client . -r
+ 1411  ls
+ 1412  cd client/
+ 1413  ls
+ 1414  vim client.c 
+ 1415  vim tran_n.c
+ 1416  cd ~/.vim
+ 1417  ls
+ 1418  cd ~/.vimplus/
+ 1419  ls
+ 1420  cd ~/.vim/plugged/prepare-code/
+ 1421  ls
+ 1422  cd snippet/
+ 1423  ls
+ 1424  vim snippet.c
+ 1425  cat snippet.sh 
+ 1426  cat snippet.py 
+ 1427  cat snippet.cpp 
+ 1428  cat snippet.go 
+ 1429  cd ~/day16/
+ 1430  ls
+ 1431  cd client/
+ 1432  ls
+ 1433  vim tran_n.c
+ 1434  cp /usr/include/func.h function.h
+ 1435  ls
+ 1436  vim client.c 
+ 1437  vim function.h 
+ 1438  make
+ 1439  vim client.c 
+ 1440  vim tran_n.c 
+ 1441  vim client.c 
+ 1442  make
+ 1443  vim function.h 
+ 1444  make
+ 1445  cd ../process_pool_server/
+ 1446  ls
+ 1447  cat file 
+ 1448  make clean;make
+ 1449  ls
+ 1450  ./process_pool_server 192.168.3.254 2000
+ 1451  ./process_pool_server 192.168.3.254 2000 5
+ 1452  cd ~/.vimplus/
+ 1453  ls
+ 1454  cd ~
+ 1455  ls
+ 1456  cat vimrc 
+ 1457  vim .vimrc
+ 1458  ls
+ 1459  cd day16/
+ 1460  ls
+ 1461  cd process_pool_server/
+ 1462  ls
+ 1463  mv file ~
+ 1464  ls
+ 1465  echo hello >file
+ 1466  cd ../client/
+ 1467  ls
+ 1468  rm file
+ 1469  cd ~
+ 1470  tar cvzf day16.tar.gz day16
+ 1471  kscp day16.tar.gz 
+ 1472  kmkdir 
+ 1473  kscp day16.tar.gz 
+ 1474  cd ../client/
+ 1475  ls
+ 1476  cd day16
+ 1477  ls
+ 1478  cd process_pool_server/
+ 1479  ls
+ 1480  vim main.c 
+ 1481  vim ~/.vimrc
+ 1482  ls
+ 1483  vim child.c 
+ 1484  vim ~/.vimrc
+ 1485  vim child.c 
+ 1486  ls
+ 1487  cd ../client/
+ 1488  ls
+ 1489  cd ..
+ 1490  ls
+ 1491  cp client client_time -r
+ 1492  cd client_time/
+ 1493  ls
+ 1494  vim client.c 
+ 1495  cd ../process_pool_server/
+ 1496  ls
+ 1497  vim tran_file.c 
+ 1498  make
+ 1499  cd ../client
+ 1500  ls
+ 1501  vim client.c 
+ 1502  make
+ 1503  vim client.c 
+ 1504  make
+ 1505  cd ../process_pool_server/
+ 1506  ls
+ 1507  mv ~/file .
+ 1508  ll
+ 1509  history 
+ 1510  ./process_pool_server 192.168.3.254 2000 5
+ 1511  ls
+ 1512  ll
+ 1513  make
+ 1514  make clean
+ 1515  vim tran_file.c 
+ 1516  make
+ 1517  clear
+ 1518  ./process_pool_server 192.168.3.254 2000 5
+ 1519  ls
+ 1520  vim tran_file.c 
+ 1521  make
+ 1522  ./process_pool_server 192.168.3.254 2000 5
+ 1523  kill -l
+ 1524  ls
+ 1525  vim main.c 
+ 1526  make
+ 1527  ./process_pool_server 192.168.3.254 2000 5
+ 1528  echo $?
+ 1529  ls
+ 1530  mv file ~
+ 1531  echo hello >file
+ 1532  cd ~
+ 1533  tar cvzf day16.tar.gz day16
+ 1534  rm day16/client_old/file
+ 1535  ls
+ 1536  tar cvzf day16.tar.gz day16
+ 1537  kscp day16.tar.gz 
+ 1538  cd -
+ 1539  ls
+ 1540  vim main.c 
+ 1541  sudo apt-get install exuberant-ctags
+ 1542  ctags -R .
+ 1543  vim main.c 
+ 1544  sudo apt-get install exuberant-ctags
+ 1545  vim main.c 
+ 1546  vim
+ 1547  man vim
+ 1548  vim -v
+ 1549  vim -V
+ 1550  ls
+ 1551  vim main.c 
+ 1552  make
+ 1553  ./process_pool_server 192.168.3.254 2000 5
+ 1554  ls
+ 1555  ps -elf|grep process
+ 1556  ls
+ 1557  vim main.c 
+ 1558  make
+ 1559  vim send_fd.c 
+ 1560  ls
+ 1561  vim function.h 
+ 1562  vim main.c 
+ 1563  vim child.c 
+ 1564  vim main.c 
+ 1565  make
+ 1566  ./process_pool_server 192.168.3.254 2000 5
+ 1567  vim main.c 
+ 1568  vim function.h 
+ 1569  vim main.c 
+ 1570  make
+ 1571  vim main.c 
+ 1572  vim M
+ 1573  vim Makefile 
+ 1574  make
+ 1575  make clean
+ 1576  make
+ 1577  cd ~
+ 1578  tar cvzf day16.tar.gz day16
+ 1579  find . -name file
+ 1580  rm ./day16/client_time/file
+ 1581  mv ./day16/process_pool_server/file .
+ 1582  ls
+ 1583  tar cvzf day16.tar.gz day16
+ 1584  kscp day16.tar.gz 
+ 1585  clear
+ 1586  ls
+ 1587  kssh 
+ 1588  ssh root@192.168.2.100
+ 1589  which kssh
+ 1590  cat /usr/bin/kssh 
+ 1591  cd ~/.ssh/
+ 1592  ls
+ 1593  cat id_rsa.pub 
+ 1594  kssh 
+ 1595  ls
+ 1596  ll
+ 1597  ssh-keygen 
+ 1598  ll
+ 1599  date
+ 1600  scp id_rsa.pub root@192.168.2.100:~
+ 1601  ssh root@192.168.2.100
+ 1602  kssh 
+ 1603  ssh test@192.168.2.100
+ 1604  scp id_rsa.pub test@192.168.2.100:~
+ 1605  ssh test@192.168.2.100
+ 1606  ls
+ 1607  which kmkdir
+ 1608  cat /usr/bin/kmkdir 
+ 1609  kssh 
+ 1610  ls
+ 1611  cd ~/day16/
+ 1612  ls
+ 1613  vim test.sh
+ 1614  chmod +x test.sh 
+ 1615  which kscp
+ 1616  cat /usr/bin/kscp 
+ 1617  kscp test.sh 
+ 1618  kssh 
+ 1619  ssh root@192.168.2.100 "cd /wangdao/C_C++方向/第28期/Linux;./test.sh"
+ 1620  kssh 
+ 1621  ls
+ 1622  mkdir thread_safe
+ 1623  cd thread_safe/
+ 1624  ls
+ 1625  cd ~/.ssh/
+ 1626  ls
+ 1627  kssh 
+ 1628  cd ~/day16/
+ 1629  ls
+ 1630  cd thread_safe/
+ 1631  ls
+ 1632  vim thread_gettime.c
+ 1633  vim ../process_pool_server/main.c 
+ 1634  vim thread_gettime.c
+ 1635  gcc thread_gettime.c -pthread
+ 1636  ./a.out 
+ 1637  vim thread_gettime.c 
+ 1638  gcc thread_gettime.c -pthread
+ 1639  ./a.out 
+ 1640  vim thread_gettime.c 
+ 1641  gcc thread_gettime.c -pthread
+ 1642  ./a.out 
+ 1643  ls
+ 1644  vim thread_gettime.c 
+ 1645  gcc thread_gettime.c -pthread
+ 1646  ./a.out 
+ 1647  man gmtime
+ 1648  vim thread_gettime.c 
+ 1649  gcc thread_gettime.c -pthread
+ 1650  ./a.out 
+ 1651  cd ~
+ 1652  tar cvzf day16.tar.gz day16
+ 1653  kscp day16.tar.gz 
+ 1654  tar cvzf day16.tar.gz day16
+ 1655  kscp day16.tar.gz 
+ 1656  lsof 
+ 1657  ls
+ 1658  find . -name ftp
+ 1659  cd code/
+ 1660  ls
+ 1661  scp ftp.tar.gz root@192.168.2.100:/backup
+ 1662  cd ..
+ 1663  ls
+ 1664  find . -name thread*
+ 1665  cd ./20190325/
+ 1666  ls
+ 1667  find . -name file|xargs ls -l
+ 1668  cd ..
+ 1669  ls
+ 1670  cd code/ftp/
+ 1671  ls
+ 1672  cd server/
+ 1673  ls
+ 1674  cd src/
+ 1675  ls
+ 1676  vim ftp_conf.c 
+ 1677  cd ~/day16
+ 1678  ls
+ 1679  cd process_pool_server/
+ 1680  ls
+ 1681  vim main.c 
+ 1682  cd ~
+ 1683  clear
+ 1684  ls
+ 1685  cd day16
+ 1686  ls
+ 1687  cd process_pool_server/
+ 1688  ls
+ 1689  vim main.c 
+ 1690  vim child.c 
+ 1691  man recv
+ 1692  man send
+ 1693  kmkdir 
+ 1694  df -h
+ 1695  clear
+ 1696  ping www.baidu.com
+ 1697  ifconfig
+ 1698  ping www.baidu.com
+ 1699  man ls
+ 1700  uname -a
+ 1701  cat /etc/issue
+ 1702  ls
+ 1703  uname -a
+ 1704  ifconfig
+ 1705  ping www.baidu.com
+ 1706  su
+ 1707  ps -elf|grep ssh
+ 1708  ifconfig
+ 1709  exit
+ 1710  clear
+ 1711  ifconfig
+ 1712  ps -elf|grep ssh
+ 1713  clear
+ 1714  su
+ 1715  su xiongda
+ 1716  pwd
+ 1717  cd /
+ 1718  ls
+ 1719  cd /home
+ 1720  ls
+ 1721  useradd lele
+ 1722  sudo useradd -m lele -s /bin/bash
+ 1723  ls
+ 1724  history 
+ 1725  ls
+ 1726  cat /etc/passwd
+ 1727  sudo passwd lele
+ 1728  sudo passwd root
+ 1729  su
+ 1730  cd luke
+ 1731  vim .bashrc 
+ 1732  pwd
+ 1733  cat /etc/passwd
+ 1734  userdel lele
+ 1735  sudo userdel lele
+ 1736  cat /etc/passwd
+ 1737  ls
+ 1738  cd ..
+ 1739  ls
+ 1740  history 
+ 1741  cd l
+ 1742  cd luke/
+ 1743  history|tail -50  >day1_history1.txt
+ 1744  which kscp 
+ 1745  sudo vim /usr/bin/kscp 
+ 1746  kscp day1_history1.txt 
+ 1747  clear
+ 1748  ls
+ 1749  ls /
+ 1750  ls -l /
+ 1751  ls -l
+ 1752  cat /etc/passwd
+ 1753  cat /etc/group
+ 1754  cat /etc/passwd
+ 1755  ls -l
+ 1756  cd ../xiongda/
+ 1757  ls
+ 1758  ls -a
+ 1759  cd ../luke
+ 1760  pwd
+ 1761  ls -l /
+ 1762  cd /dev/
+ 1763  ls
+ 1764  ls -l
+ 1765  cd ~
+ 1766  pwd
+ 1767  ls --color=never
+ 1768  ls
+ 1769  alias 
+ 1770  man ls
+ 1771  man fopen
+ 1772  man ls
+ 1773  man stat
+ 1774  man 2 stat
+ 1775  ls
+ 1776  cd /home/xiongda
+ 1777  pwd
+ 1778  cd ../luke
+ 1779  pwd
+ 1780  cd ..
+ 1781  pwd
+ 1782  cd luke
+ 1783  pwd
+ 1784  ls
+ 1785  cd test/
+ 1786  pwd
+ 1787  ls
+ 1788  cd ..
+ 1789  cd /home/xiongda/
+ 1790  cd ~
+ 1791  pwd
+ 1792  cd -
+ 1793  env
+ 1794  pwd
+ 1795  echo $PWD
+ 1796  cd -
+ 1797  env
+ 1798  mkdir test
+ 1799  cd ..
+ 1800  ls -l
+ 1801  cd luke
+ 1802  ls
+ 1803  rm -rf day[1-9]
+ 1804  ls
+ 1805  mkdir day1
+ 1806  ls
+ 1807  pwd
+ 1808  cd /home
+ 1809  mkdir day1
+ 1810  ls
+ 1811  ls -l /
+ 1812  cd luke/
+ 1813  ls
+ 1814  pwd
+ 1815  ls
+ 1816  cd ..
+ 1817  ll
+ 1818  alias 
+ 1819  ls -l
+ 1820  ls -lh
+ 1821  cd luke/
+ 1822  ls -l
+ 1823  ls -lh
+ 1824  ll
+ 1825  ll /
+ 1826  ll
+ 1827  ll ../
+ 1828  cd luke
+ 1829  pwd
+ 1830  cd day1
+ 1831  ls
+ 1832  mkdir dir1
+ 1833  ls
+ 1834  cd ..
+ 1835  rmdir day1
+ 1836  cd day1
+ 1837  rmdir dir1
+ 1838  ls
+ 1839  cp ../gmtime.c .
+ 1840  ls
+ 1841  cp /home/xiongda/examples.desktop /home/luke/day1
+ 1842  ls
+ 1843  cp ../test .
+ 1844  cp -r ../test .
+ 1845  ls
+ 1846  cp gmtime.c test/
+ 1847  ls test/
+ 1848  ls
+ 1849  cp test dir1 -r
+ 1850  ls
+ 1851  ll
+ 1852  cd dir1/
+ 1853  ls
+ 1854  cd ..
+ 1855  ls
+ 1856  cp gmtime.c test/
+ 1857  cp -i gmtime.c test/
+ 1858  cat gmtime.c 
+ 1859  echo hello >gmtime.c 
+ 1860  cat gmtime.c 
+ 1861  cat test/gmtime.c 
+ 1862  echo hello
+ 1863  cp -i gmtime.c test/
+ 1864  cat test/gmtime.c 
+ 1865  cp -i gmtime.c test/
+ 1866  cat test/gmtime.c 
+ 1867  cp -f gmtime.c test/
+ 1868  ls
+ 1869  mv examples.desktop test/
+ 1870  ls
+ 1871  ls test/
+ 1872  ls
+ 1873  mv gmtime.c main.c
+ 1874  ls
+ 1875  mv dir1 test
+ 1876  ls
+ 1877  ls test/
+ 1878  mv test/gmtime.c .
+ 1879  ls
+ 1880  mv -i main.c gmtime.c 
+ 1881  ls
+ 1882  mv -i main.c gmtime.c 
+ 1883  ls
+ 1884  cat gmtime.c 
+ 1885  history 
+ 1886  history |tail -140 >day1_history2.txt
+ 1887  kscp day1_history2.txt 
+ 1888  ls
+ 1889  ls test/
+ 1890  cp gmtime.c test/
+ 1891  cp -i gmtime.c test/
+ 1892  cd day1
+ 1893  ls
+ 1894  cp -i gmtime.c test/
+ 1895  ps -elf
+ 1896  who
+ 1897  ls /home
+ 1898  sudo useradd -m lele
+ 1899  cat /etc/passwd
+ 1900  sudo passwd lele
+ 1901  sudo vim /etc/passwd
+ 1902  who
+ 1903  sudo userdel lele
+ 1904  ps -elf
+ 1905  sudo userdel lele
+ 1906  cd /dev
+ 1907  rm disk/
+ 1908  ls
+ 1909  rm loop0
+ 1910  ll
+ 1911  cd /home/luke
+ 1912  ls
+ 1913  pwd
+ 1914  ls
+ 1915  rm day4.tar.gz 
+ 1916  ls
+ 1917  rm day11
+ 1918  rm -r day12
+ 1919  ll
+ 1920  ls
+ 1921  cd day1
+ 1922  ls
+ 1923  rm -r test
+ 1924  rm -i gmtime.c 
+ 1925  ls
+ 1926  rm -i gmtime.c 
+ 1927  ls
+ 1928  alias 
+ 1929  tree
+ 1930  cd ..
+ 1931  tree
+ 1932  tree -a 
+ 1933  tree -d
+ 1934  tree -h
+ 1935  ls
+ 1936  cd day1
+ 1937  ls
+ 1938  vim helloworld.sh
+ 1939  ll
+ 1940  chmod +x helloworld.sh 
+ 1941  ll
+ 1942  ./helloworld.sh 
+ 1943  vim print.py
+ 1944  ll
+ 1945  chmod +x print.py 
+ 1946  ll
+ 1947  ./print.py 
+ 1948  cat /etc/passwd
+ 1949  sudo useradd lele
+ 1950  sudo passwd lele
+ 1951  sudo vim /etc/passwd
+ 1952  ls
+ 1953  ll
+ 1954  touch file
+ 1955  ll
+ 1956  chmod o+w file
+ 1957  ll
+ 1958  touch file1
+ 1959  ll
+ 1960  chmod 444 file
+ 1961  ll
+ 1962  chmod 222 file
+ 1963  ll
+ 1964  cat file
+ 1965  chmod 664 file
+ 1966  cat file
+ 1967  ll
+ 1968  cd ..
+ 1969  ll
+ 1970  chmod 777 day1
+ 1971  cd day1
+ 1972  ls
+ 1973  cd ..
+ 1974  chmod 775 day1
+ 1975  chmod 777 day1 
+ 1976  chmod 775 day1 
+ 1977  cd day1
+ 1978  ls
+ 1979  ll
+ 1980  rm file2
+ 1981  ll
+ 1982  history 
+ 1983  history >day1_xxx.txt
+ 1984  vim day1_xxx.txt 
+ 1985  mv day1_xxx.txt day1_history3.txt
+ 1986  vim day1_history3.txt 
+ 1987  kscp day1_history3.txt 
+ 1988  ls
+ 1989  kscp helloworld.sh 
+ 1990  kscp print.py 
+ 1991  clear
+ 1992  kssh 
+ 1993  ping www.baidu.com
+ 1994  ifconfig
+ 1995  ping www.baidu.com
+ 1996  ifconfig
+ 1997  ping www.baidu.com
+ 1998  clear
+ 1999  cat /etc/passwd
+ 2000  su lele
+ 2001  sudo userdel lele
+ 2002  ls
+ 2003  cd ..
+ 2004  ls
+ 2005  rm -r lele
+ 2006  rm -rf lele
+ 2007  ls -l /
+ 2008  sudo rm -rf lele
+ 2009  ls
+ 2010  cd luke
+ 2011  ls
+ 2012  sudo passwd root
+ 2013  su root
+ 2014  ls -l
+ 2015  mkdir day2
+ 2016  cp gmtime.c day2
+ 2017  rm gmtime.c 
+ 2018  mv day2/gmtime.c .
+ 2019  ls
+ 2020  cp test day2
+ 2021  cp test day2 -r
+ 2022  find /usr/include/ -name stdio.h
+ 2023  cd day2
+ 2024  ls
+ 2025  mkdir dir1
+ 2026  ls
+ 2027  touch file
+ 2028  mkdir test/file
+ 2029  find . -name file
+ 2030  find . -name file -a -type d
+ 2031  find . -name file -a -type f
+ 2032  find /usr/include/ -name stdio.h -o -name stdlib.h
+ 2033  ls
+ 2034  find . ! -name file
+ 2035  find /usr/include/ -name std*.h
+ 2036  cd ..
+ 2037  find . -name *.c
+ 2038  ls
+ 2039  find . -name "*.c"
+ 2040  find /usr/include/ -name std??.h
+ 2041  find /usr/include/ -name std*.h
+ 2042  cd day2
+ 2043  ls
+ 2044  touch file1
+ 2045  touch file2
+ 2046  touch file3
+ 2047  touch file4
+ 2048  ls
+ 2049  find . -name file[1-3]
+ 2050  find . -name "file[1-3]"
+ 2051  ls
+ 2052  cat /etc/passwd
+ 2053  cd /home
+ 2054  find . -uid 1001
+ 2055  ls -l ./guangtouqiang/.gnupg
+ 2056  ls -l ./guangtouqiang
+ 2057  ls -al ./guangtouqiang
+ 2058  ls
+ 2059  find . -user luke
+ 2060  cd luke
+ 2061  find . -empty
+ 2062  ls -l ./20190328/Tinyhttpd/.git/branches
+ 2063  ls
+ 2064  cd day2
+ 2065  ls
+ 2066  ll
+ 2067  chmod 666 file
+ 2068  ll
+ 2069  find . -perm 666
+ 2070  find . -perm 664
+ 2071  find . -size 1
+ 2072  man find
+ 2073  echo hello >file
+ 2074  ll
+ 2075  find . -size 1
+ 2076  find . -size 6c
+ 2077  echo how >file1
+ 2078* 
+ 2079  echo how
+ 2080  echo -n how >file2
+ 2081  ll
+ 2082  cat file2
+ 2083  cat file1
+ 2084  find . -size 6c
+ 2085  find . -size 3c
+ 2086  ll
+ 2087  find . -mmin 1
+ 2088  find . -mmin -1
+ 2089  find . -mmin +1
+ 2090  find . -mmin -480
+ 2091  find . -mtime -1
+ 2092  cd ..
+ 2093  find . -mtime -1
+ 2094  find /usr/include/ -name stdio.h
+ 2095  find /usr/include/ -name stdio.h -exec ls -l {} \;
+ 2096  find /usr/include/ -name stdio.h|xargs ls -l
+ 2097  cd day2
+ 2098* 
+ 2099  cd ..
+ 2100  ls
+ 2101  cd -
+ 2102  ls
+ 2103  ls|wc -l
+ 2104  cd ..
+ 2105  ls|wc -l
+ 2106  find /usr/include/ -name std*.h
+ 2107  find /usr/include/ -name std*.h|wc -l
+ 2108  cd day2
+ 2109  ls
+ 2110  find . -name file[1-3]
+ 2111  find . -name "file[1-3]"
+ 2112  find . -name "file[1-3]"|xargs ls -l
+ 2113  find . -name "file[1-3]"|xargs rm -rf
+ 2114  ls
+ 2115  df -h
+ 2116  cd /home
+ 2117  ls
+ 2118  ls -l
+ 2119  du -h
+ 2120  sudo du -h
+ 2121  sudo du -h --max-depth=0
+ 2122  sudo du -h --max-depth=1
+ 2123  cd luke
+ 2124  du -h --max-depth=1
+ 2125  history 
+ 2126  history |tail -125 >day2_history1.txt
+ 2127  kscp day2_history1.txt 
+ 2128  cd day2
+ 2129  ls
+ 2130  cat /etc/passwd
+ 2131  cat /etc/group
+ 2132  cat /etc/shadow
+ 2133  ls -l /etc/shadow
+ 2134  sudo cat /etc/shadow
+ 2135  vim file4
+ 2136  cat file4
+ 2137  cat -b file4
+ 2138  cat -E file4
+ 2139  cat -n file4
+ 2140  cat file4
+ 2141  cat file4|wc -l
+ 2142  ls
+ 2143  ls >file
+ 2144  cat file
+ 2145  ls|wc -l
+ 2146  cat -s file4
+ 2147  history 
+ 2148  ls
+ 2149  history >file2
+ 2150  cat file2
+ 2151  echo hello >file2
+ 2152  cat file2
+ 2153  echo world >>file2
+ 2154  cat file2
+ 2155  echo how >>file1
+ 2156  cat file1
+ 2157  ll
+ 2158  gcc -v
+ 2159  vim main.c
+ 2160  gcc main.c 
+ 2161  ls
+ 2162  ll
+ 2163  ./a.out 
+ 2164  ./a.out >log1
+ 2165  cat log1 
+ 2166  ./a.out 2>log2
+ 2167  cat log2
+ 2168  ./a.out >log3 2>&1
+ 2169  cat log3
+ 2170  ./a.out 
+ 2171  ./a.out >log4 1>&2
+ 2172  cat log4
+ 2173  ls
+ 2174  echo >file5
+ 2175  ll
+ 2176  cat file5
+ 2177  echo -n >file6
+ 2178  ll
+ 2179  touch a.txt
+ 2180  ll
+ 2181  vim test.sh
+ 2182  vim main.c
+ 2183  vim main1.c
+ 2184  cat >file7
+ 2185  ll
+ 2186  cat file1
+ 2187  cat >file2 <file1
+ 2188  cat file2
+ 2189  cat file1 
+ 2190  cat file1 >file5
+ 2191  cat file5
+ 2192  cat file1 file2
+ 2193  cat file1 file2 >file5
+ 2194  cat file5
+ 2195  ls
+ 2196  ll
+ 2197  head -n 2 main.c 
+ 2198  head -2 main.c 
+ 2199  vim main1.c
+ 2200  history 
+ 2201  history |tail -10
+ 2202  history |tail -10 >day2_xxx.txt
+ 2203  cat day2_xxx.txt 
+ 2204  ls
+ 2205  find ~ -name The*.txt
+ 2206  history >file

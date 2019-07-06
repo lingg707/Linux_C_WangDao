@@ -1,0 +1,100 @@
+ 2056  vim main.c
+ 2057  ll
+ 2058  vim log2
+ 2059  cd ..
+ 2060  ls
+ 2061  ll
+ 2062  ls -a
+ 2063  ls .vimrc -l
+ 2064  mv .vimrc backup_vimrc
+ 2065  ls
+ 2066  mv vimrc_easy .vimrc
+ 2067  cd -
+ 2068  ls
+ 2069  vim log2
+ 2070  gcc main.c
+ 2071  vim +3 main.c
+ 2072  vim +/printf main.c
+ 2073  vim main.c
+ 2074  cat main*.c
+ 2075  ls
+ 2076  sed "s/printf/puts/g" main.c
+ 2077  cat main.c
+ 2078  sed -i "s/printf/puts/g" *.c
+ 2079  grep printf *.c
+ 2080  grep puts *.c
+ 2081  grep -n puts *.c
+ 2082  ls
+ 2083  mkdir dir3
+ 2084  mv main1.c dir3
+ 2085  ls
+ 2086  find . -name *.c
+ 2087  ll
+ 2088  ls dir3
+ 2089  find . -name "*.c"
+ 2090  find . -name "*.c"|xargs grep puts
+ 2091  find . -name "*.c"|xargs sed -i "s/puts/printf/g"
+ 2092  find . -name "*.c"|xargs grep puts
+ 2093  find . -name "*.c"|xargs grep printf
+ 2094  vimdiff main.c dir3/main1.c 
+ 2095  diff main.c dir3/main1.c
+ 2096  vim main.c 
+ 2097  vim dir3/main1.c 
+ 2098  vim main.c 
+ 2099  alias 
+ 2100  cd ~
+ 2101  vim .bashrc 
+ 2102  . .bashrc 
+ 2103  vim .bashrc 
+ 2104  source .bashrc
+ 2105  alias 
+ 2106  ll
+ 2107  vim .bashrc 
+ 2108  which ll
+ 2109  ls
+ 2110  cd day2
+ 2111  ls
+ 2112  mkdir vim
+ 2113  ls
+ 2114  mv * vim
+ 2115  ls
+ 2116  ls vim/
+ 2117  ls
+ 2118  mkdir gcc
+ 2119  ls
+ 2120  cd gcc/
+ 2121  vim main.c
+ 2122  cat main.c 
+ 2123  gcc main.c 
+ 2124  ls
+ 2125  gcc -E main.c -o main.i
+ 2126  vim main.i 
+ 2127* 
+ 2128  vim main.i 
+ 2129  gcc main.i -o main.s
+ 2130  ll
+ 2131  rm main.s
+ 2132  ls
+ 2133  gcc -S main.i -o main.s
+ 2134  ll
+ 2135  vim main.s
+ 2136  vim main.c
+ 2137  gcc -E main.c -o main.i
+ 2138  gcc -S main.i -o main.s
+ 2139  vim main.s
+ 2140  as main.s -o main.o
+ 2141  ll
+ 2142  vim main.o
+ 2143  nm main.o
+ 2144  gcc main.o -o main
+ 2145  ls
+ 2146  ./main 
+ 2147  rm a.out 
+ 2148  ll
+ 2149  rm main
+ 2150  gcc main.c -o main
+ 2151  ./main 
+ 2152  cd ..
+ 2153  ls
+ 2154  history 
+ 2155  history |tail -100 >day2_history3.txt

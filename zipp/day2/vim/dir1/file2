@@ -1,0 +1,23 @@
+total 4344
+-rw-rw-r-- 1 luke luke       0 May 14 11:08 a.txt
+-rw-rw-r-- 1 luke luke     214 May 14 11:13 day2_xxx.txt
+drwxrwxr-x 2 luke luke    4096 May 14 09:44 dir1
+-rw-rw-rw- 1 luke luke   19329 May 14 11:14 file
+-rw-rw-r-- 1 luke luke       4 May 14 10:59 file1
+-rw-rw-r-- 1 luke luke       0 May 14 11:36 file2
+-rw-rw-r-- 1 luke luke      76 May 14 11:22 file3
+-rw-rw-r-- 1 luke luke      31 May 14 10:54 file4
+-rw-rw-r-- 1 luke luke       8 May 14 11:11 file5
+-rw-rw-r-- 1 luke luke     114 May 14 11:23 file6
+-rw-rw-r-- 1 luke luke       0 May 14 11:10 file7
+-rw-rw-r-- 1 luke luke       2 May 14 11:33 hanzi1.txt
+-rw-rw-r-- 1 luke luke       3 May 14 11:30 hanzi.txt
+-rw-rw-r-- 1 luke luke       2 May 14 11:30 hanzi_w.txt
+-rw-rw-r-- 1 luke luke      11 May 14 11:04 log1
+-rw-rw-r-- 1 luke luke      33 May 14 11:04 log2
+-rw-rw-r-- 1 luke luke      44 May 14 11:06 log3
+-rw-rw-r-- 1 luke luke       0 May 14 11:07 log4
+-rwxrwxr-x 1 luke luke    8384 May 14 11:03 main
+-rw-rw-r-- 1 luke luke     177 May 14 11:03 main.c
+drwxrwxr-x 3 luke luke    4096 May 14 09:44 test
+-rw-rw-r-- 1 luke luke 4351658 May 14  2015 The_Holy_Bible.txt

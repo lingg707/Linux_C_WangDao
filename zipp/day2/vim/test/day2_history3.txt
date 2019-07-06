@@ -1,0 +1,140 @@
+ 2337  kscp file*
+ 2338  ll
+ 2339  cd ..
+ 2340  kscp day2
+ 2341  clear
+ 2342  cd day2
+ 2343  ls
+ 2344  ls dir1
+ 2345  mv file* dir1
+ 2346  ls
+ 2347  ls dir1
+ 2348  tar cfv dir1.tar dir1 
+ 2349  ls
+ 2350  ll
+ 2351  du -h --max-depth=0 dir1
+ 2352  cd dir1/
+ 2353  ls
+ 2354  ll
+ 2355  tar cfv dir1.tar dir1 
+ 2356  tar cfv dir1.tar *
+ 2357  ls
+ 2358  ll
+ 2359  rm file*
+ 2360  ls
+ 2361  echo hello >test
+ 2362  ll
+ 2363  tar rf dir1.tar test
+ 2364  ll
+ 2365  rm test 
+ 2366  ll
+ 2367  tar xf dir1.tar 
+ 2368  ls
+ 2369  ll
+ 2370  tar cvzf dir1.tar.gz file* test
+ 2371  ll
+ 2372  rm file* test dir1.tar
+ 2373  ll
+ 2374  tar xf dir1.tar.gz 
+ 2375  ll
+ 2376  file dir1.tar.gz 
+ 2377  ll
+ 2378  cd ..
+ 2379  ls
+ 2380  gzip test
+ 2381  ll
+ 2382  gzip dir1.tar 
+ 2383  ll
+ 2384  gzip -dv dir1.tar.gz 
+ 2385  ll
+ 2386  gzip -v dir1.tar 
+ 2387  ll
+ 2388  gzip -d dir1.tar.gz 
+ 2389  bzip2 -v dir1.tar 
+ 2390  ll
+ 2391  bzip2 -dv dir1.tar.bz2 
+ 2392  ll
+ 2393  rar
+ 2394  cat /etc/apt/sources.list
+ 2395  kssh 
+ 2396  history 
+ 2397  kssh 
+ 2398  ssh test@192.168.2.100
+ 2399  ssh test19@192.168.2.100
+ 2400  ping www.baidu.com
+ 2401  ping 192.168.2.100
+ 2402  cat /var/log/auth.log
+ 2403  ls
+ 2404  ssh test19@192.168.2.100
+ 2405  ls
+ 2406  ll
+ 2407  cat log1
+ 2408  scp log1 test19@192.168.2.100:~
+ 2409  ssh test19@192.168.2.100
+ 2410  ls
+ 2411  ll /
+ 2412  touch /tmp/file
+ 2413  ls
+ 2414  ll
+ 2415  rm log1
+ 2416  scp test19@192.168.2.100:~/log1 .
+ 2417  ps -elf|grep ssh
+ 2418  ssh test19@192.168.2.100
+ 2419  ps -elf|grep ssh
+ 2420  which kmkdir 
+ 2421  cp /usr/bin/kmkdir .
+ 2422  ls
+ 2423  ll
+ 2424  vim kmkdir 
+ 2425  cd test/
+ 2426  ls
+ 2427  rm -rf file/
+ 2428  ls
+ 2429  scp -r test@192.168.2.100:/wangdao/C_C++方向/第29期/Linux/20190514/code/* .
+ 2430  ls
+ 2431  vim gscp.sh
+ 2432  which kscp
+ 2433  ls
+ 2434  kscp gscp.sh 
+ 2435  which kscp 
+ 2436  cat /usr/bin/kscp
+ 2437  date -d "0 week" +%Y%m%d
+ 2438  date
+ 2439  date  +%Y%m%d
+ 2440  vim gscp.sh 
+ 2441  ls
+ 2442  ll
+ 2443  chmod +x gscp.sh 
+ 2444  ls
+ 2445  mv gscp.sh gscp
+ 2446  ll
+ 2447  rm day* -rf
+ 2448  ls
+ 2449  gscp
+ 2450  ./gscp 
+ 2451  ls
+ 2452  rm day* -rf
+ 2453  ls
+ 2454  rm gscp.sh 
+ 2455  ls
+ 2456  kscp gscp 
+ 2457  echo $PATH
+ 2458  which ls
+ 2459  which file
+ 2460  which gscp
+ 2461  sudo cp gscp /usr/bin
+ 2462  ls
+ 2463  rm gscp 
+ 2464  gscp
+ 2465  ls
+ 2466  vim gscp 
+ 2467  rm day2_history2.txt 
+ 2468  ./gscp day2_history2.txt
+ 2469  ls
+ 2470  vim gscp 
+ 2471  ./gscp "*"
+ 2472  ls
+ 2473  cat gscp 
+ 2474  ifconfig
+ 2475  history 
+ 2476  history |tail -140 >day2_history3.txt

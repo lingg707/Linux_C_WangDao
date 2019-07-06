@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGS_CHECK	head.h	35;"	d
+CC	Makefile	/^CC:=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS:=-Wall -I..\/include\/\/用于C编译器的选项，指定头文件的路径CXXFLAGS是用于cpp编译的选项，包含了编译和汇编两个步骤$/;"	m
+ELF	Makefile	/^ELF:=server$/;"	m
+ERROR_CHECK	head.h	36;"	d
+FILENAME	factory.h	16;"	d
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))\/\/替换通配符$/;"	m
+PTHREAD_ERROR_CHECK	head.h	37;"	d
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+_GNU_SOURCE	head.h	3;"	d
+__FACTORY_H__	factory.h	2;"	d
+__HEAD_H__	head.h	2;"	d
+__WORK_QUE__	workque.h	2;"	d
+buf	factory.h	/^    char buf[1000];$/;"	m	struct:__anon2
+capacity	workque.h	/^    int capacity;$/;"	m	struct:__anon3
+cond	factory.h	/^    pthread_cond_t cond;$/;"	m	struct:__anon1
+datalen	factory.h	/^    int datalen;$/;"	m	struct:__anon2
+factory	factory.h	/^}factory,*pfactory;$/;"	t	typeref:struct:__anon1
+factoryinit	factory.c	/^int factoryinit(pfactory pf,int threadnum,int capacity)$/;"	f
+factorystart	factory.c	/^int factorystart(pfactory pf)$/;"	f
+main	main.c	/^int main(int argc,char *argv[])$/;"	f
+mutex	workque.h	/^    pthread_mutex_t mutex;$/;"	m	struct:__anon3
+newfd	workque.h	/^    int newfd;$/;"	m	struct:tagnode
+node	workque.h	/^}node,*pnode;$/;"	t	typeref:struct:tagnode
+pfactory	factory.h	/^}factory,*pfactory;$/;"	t	typeref:struct:__anon1
+pnext	workque.h	/^    struct tagnode *pnext;$/;"	m	struct:tagnode	typeref:struct:tagnode::tagnode
+pnode	workque.h	/^}node,*pnode;$/;"	t	typeref:struct:tagnode
+pque	workque.h	/^}que,*pque;$/;"	t	typeref:struct:__anon3
+pthid	factory.h	/^    pthread_t *pthid;$/;"	m	struct:__anon1
+que	factory.h	/^    que que;$/;"	m	struct:__anon1
+que	workque.h	/^}que,*pque;$/;"	t	typeref:struct:__anon3
+que_head	workque.h	/^    pnode que_head,que_tail;$/;"	m	struct:__anon3
+que_tail	workque.h	/^    pnode que_head,que_tail;$/;"	m	struct:__anon3
+queget	workque.c	/^int queget(pque pq,pnode* pget)\/\/出队，如果为空报错，pget为二级指针，factory主函数直接用pget传参$/;"	f
+queinit	workque.c	/^void queinit(pque pq,int capacity)$/;"	f
+queinsert	workque.c	/^void queinsert(pque pq,pnode pnew)\/\/入队，从队尾入队$/;"	f
+size	workque.h	/^    int size;$/;"	m	struct:__anon3
+startflag	factory.h	/^    int startflag;$/;"	m	struct:__anon1
+tagnode	workque.h	/^typedef struct tagnode{$/;"	s
+tcpinit	tcpinit.c	/^int tcpinit(int *sFd,char* ip,char* port)$/;"	f
+threadfunc	factory.c	/^void *threadfunc(void *p)$/;"	f
+threadnum	factory.h	/^    int threadnum;$/;"	m	struct:__anon1
+train	factory.h	/^}train;$/;"	t	typeref:struct:__anon2
+tranfile	tran_file.c	/^int tranfile(int newfd)$/;"	f

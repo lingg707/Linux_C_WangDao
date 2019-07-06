@@ -1,0 +1,200 @@
+ 2132  cat /etc/shadow
+ 2133  ls -l /etc/shadow
+ 2134  sudo cat /etc/shadow
+ 2135  vim file4
+ 2136  cat file4
+ 2137  cat -b file4
+ 2138  cat -E file4
+ 2139  cat -n file4
+ 2140  cat file4
+ 2141  cat file4|wc -l
+ 2142  ls
+ 2143  ls >file
+ 2144  cat file
+ 2145  ls|wc -l
+ 2146  cat -s file4
+ 2147  history 
+ 2148  ls
+ 2149  history >file2
+ 2150  cat file2
+ 2151  echo hello >file2
+ 2152  cat file2
+ 2153  echo world >>file2
+ 2154  cat file2
+ 2155  echo how >>file1
+ 2156  cat file1
+ 2157  ll
+ 2158  gcc -v
+ 2159  vim main.c
+ 2160  gcc main.c 
+ 2161  ls
+ 2162  ll
+ 2163  ./a.out 
+ 2164  ./a.out >log1
+ 2165  cat log1 
+ 2166  ./a.out 2>log2
+ 2167  cat log2
+ 2168  ./a.out >log3 2>&1
+ 2169  cat log3
+ 2170  ./a.out 
+ 2171  ./a.out >log4 1>&2
+ 2172  cat log4
+ 2173  ls
+ 2174  echo >file5
+ 2175  ll
+ 2176  cat file5
+ 2177  echo -n >file6
+ 2178  ll
+ 2179  touch a.txt
+ 2180  ll
+ 2181  vim test.sh
+ 2182  vim main.c
+ 2183  vim main1.c
+ 2184  cat >file7
+ 2185  ll
+ 2186  cat file1
+ 2187  cat >file2 <file1
+ 2188  cat file2
+ 2189  cat file1 
+ 2190  cat file1 >file5
+ 2191  cat file5
+ 2192  cat file1 file2
+ 2193  cat file1 file2 >file5
+ 2194  cat file5
+ 2195  ls
+ 2196  ll
+ 2197  head -n 2 main.c 
+ 2198  head -2 main.c 
+ 2199  vim main1.c
+ 2200  history 
+ 2201  history |tail -10
+ 2202  history |tail -10 >day2_xxx.txt
+ 2203  cat day2_xxx.txt 
+ 2204  ls
+ 2205  find ~ -name The*.txt
+ 2206  history >file
+ 2207  more file
+ 2208  ls
+ 2209  ll
+ 2210  vim file2
+ 2211  cat file2
+ 2212  sort file2
+ 2213  cat file2
+ 2214  sort file2 >file3
+ 2215  cat file3
+ 2216  sort file2 >file2
+ 2217  cat file2
+ 2218  ls
+ 2219  file a.out 
+ 2220  which ls
+ 2221  file /bin/ls
+ 2222  a.out
+ 2223  echo $PATH
+ 2224  export PATH=$PATH:~/day2
+ 2225  echo $PATH
+ 2226  a.out 
+ 2227  mv a.out main
+ 2228  main 
+ 2229  ll
+ 2230  cd ..
+ 2231  ls
+ 2232  ll
+ 2233  file day9.tar.gz 
+ 2234  mv day9.tar.gz day9.no
+ 2235  file day9.no 
+ 2236  cd -
+ 2237  ls
+ 2238  ll
+ 2239  vim file3 
+ 2240  uniq file3
+ 2241  sort file3
+ 2242* 
+ 2243  sort file3|uniq -c
+ 2244  sort file3|uniq -c >file6
+ 2245  cat file6
+ 2246  sort file3|uniq -d
+ 2247  sort file3|uniq -u
+ 2248  ls
+ 2249  wc The_Holy_Bible.txt 
+ 2250  wc -c The_Holy_Bible.txt 
+ 2251  wc -l The_Holy_Bible.txt 
+ 2252  wc -w The_Holy_Bible.txt 
+ 2253  wc -m The_Holy_Bible.txt 
+ 2254  vim hanzi.txt
+ 2255  ll
+ 2256  echo -n 烫 >hanzi.txt 
+ 2257  cat hanzi.txt 
+ 2258  ll
+ 2259  ls
+ 2260  ll
+ 2261  cat hanzi.txt 
+ 2262  rm hanzi.txt 
+ 2263  ll
+ 2264  cat hanzi_w.txt 
+ 2265  vim hanzi_w.txt 
+ 2266  cat ~/.vimrc
+ 2267  ls
+ 2268  echo -n 烫 >hanzi.txt
+ 2269  ll
+ 2270  vim hanzi.txt 
+ 2271  vim hanzi_w.txt 
+ 2272  vim hanzi.txt 
+ 2273  vim hanzi_w.txt 
+ 2274  iconv -f utf-8 -t gb2312 hanzi.txt >hanzi1.txt
+ 2275  ll
+ 2276  vim hanzi1.txt 
+ 2277  find /usr/include/ -name stdio.h
+ 2278  find /usr/include/ -name stdio.h|xargs grep FILE
+ 2279  ls -l
+ 2280  ls -l|grep ^d
+ 2281  ls -l|grep ^-
+ 2282  ls -l >file2
+ 2283  grep ^d file2
+ 2284  ls -l
+ 2285  ls -l|grep txt$
+ 2286  ls *.txt
+ 2287  rm *.txt
+ 2288  ll
+ 2289  vim file1
+ 2290  cp main.c  main1.c
+ 2291  vim main1.c 
+ 2292  grep ^ main1.c 
+ 2293  grep -F ^ main1.c 
+ 2294  grep -c -F ^ main1.c 
+ 2295  grep -c fopen main1.c 
+ 2296  grep fopen main1.c 
+ 2297  grep -n fopen main1.c 
+ 2298  grep fo main1.c 
+ 2299  grep fo.* main1.c 
+ 2300  vim main1.c 
+ 2301  grep p main1.c 
+ 2302  grep p.*f main1.c 
+ 2303  grep p....f main1.c 
+ 2304  grep p[a-z][a-z].*f main1.c 
+ 2305  grep p[a-z][a-z].*[a-z]f main1.c 
+ 2306  grep p[a-z].*[a-z]f main1.c 
+ 2307  touch file9
+ 2308  ll
+ 2309  umask 
+ 2310  umask 000
+ 2311  umask 
+ 2312  touch file10
+ 2313  ll
+ 2314  mkdir dir2
+ 2315  ll
+ 2316  cd dir2
+ 2317  ls
+ 2318  touch file1
+ 2319  ll
+ 2320  rm file 
+ 2321  ll
+ 2322  ls
+ 2323  touch file1
+ 2324  ll
+ 2325  chmod o-w file1
+ 2326  ll
+ 2327  umask 
+ 2328  umask 002
+ 2329  ll
+ 2330  history 
+ 2331  history |tail -200 >day2_history2.txt
